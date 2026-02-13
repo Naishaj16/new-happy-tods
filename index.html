@@ -18,25 +18,30 @@
         <div class="nav-container">
             <a href="index.html" class="logo">Happy Tods</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="contact.html" class="nav-cta">Enroll Now</a>
+            <a href="#contact" class="nav-cta">Enroll Now</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Happy Tods Chennai</h1>
-            <p>Where Learning Feels Like Play!</p>
-            <a href="contact.html" class="cta-button">Enroll Now</a>
+    <section id="home" class="hero">
+        <div class="container hero-container-grid">
+            <div class="hero-text">
+                <h1>Happy Tods Chennai</h1>
+                <p>Where Learning Feels Like Play</p>
+                <a href="#contact" class="cta-button">Enroll Now</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1540479859555-17af45c78602?auto=format&fit=crop&q=80&w=1000"
+                    alt="Preschool Classroom" class="hero-blurred-image">
+            </div>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
@@ -71,7 +76,57 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="about.html" class="secondary-button">Learn More About Our Method</a>
+                    <a href="about.html" class="secondary-button">Read Full Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title text-center">Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <span class="program-icon">👶</span>
+                    <h3>Toddlers</h3>
+                    <p>Focusing on sensory exploration and social development for ages 1.5 - 2.5 years.</p>
+                    <a href="programs.html#toddlers" class="text-link">Learn More</a>
+                </div>
+                <div class="program-card">
+                    <span class="program-icon">🎨</span>
+                    <h3>Preschool</h3>
+                    <p>Encouraging creativity, language skills, and motor development for ages 2.5 - 3.5 years.</p>
+                    <a href="programs.html#preschool" class="text-link">Learn More</a>
+                </div>
+                <div class="program-card">
+                    <span class="program-icon">📚</span>
+                    <h3>Kindergarten</h3>
+                    <p>Preparing young minds for formal schooling with a focus on literacy and numeracy.</p>
+                    <a href="programs.html#kindergarten" class="text-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>We'd love to hear from you! Visit us or drop a message to start your child's journey with us.</p>
+                    <ul class="contact-details">
+                        <li>📍 123 Education Lane, Chennai, Tamil Nadu</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ hello@happytods.com</li>
+                    </ul>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
