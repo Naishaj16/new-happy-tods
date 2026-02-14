@@ -331,6 +331,66 @@ body {
     transform: translateY(-2px);
 }
 
+/* Fun Facts Section */
+.fun-facts {
+    background-color: #6B83A6;
+    padding: 100px 0;
+    color: var(--white);
+}
+
+.fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.fun-fact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.fun-fact-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fun-fact-icon svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.fun-fact-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    line-height: 1.4;
+    margin: 0;
+    max-width: 200px;
+}
+
+@media (max-width: 992px) {
+    .fun-facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fun-facts-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
 /* Programs Section */
 .programs {
     padding: 100px 0;
