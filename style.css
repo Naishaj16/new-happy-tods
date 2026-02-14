@@ -352,65 +352,168 @@ h4 {
     margin: 0;
 }
 
-/* Programs Section - Cards */
-.programs {
+/* Founders Section */
+.founders-section {
     padding: var(--section-padding);
     background-color: var(--bg-cream);
 }
 
+.founders-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.founders-heading {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 25px;
+}
+
+.founders-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-navy);
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+.founders-link {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.founders-media {
+    position: relative;
+    padding: 20px;
+}
+
+.media-container {
+    position: relative;
+    z-index: 1;
+}
+
+.abstract-shape {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.abstract-shape svg {
+    width: 100%;
+    height: 100%;
+}
+
+.video-thumbnail {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--white);
+    aspect-ratio: 4/3;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-navy);
+}
+
+/* Programs Section - Cards */
+.programs-overview {
+    padding: var(--section-padding);
+    background-color: var(--white);
+}
+
 .programs-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     margin-top: 50px;
 }
 
 .program-card {
-    background-color: var(--white);
-    padding: 40px;
-    border-radius: var(--border-radius);
+    background-color: var(--bg-cream);
+    padding: 50px;
+    border-radius: var(--border-radius-md);
     text-align: left;
+    transition: transform 0.3s ease;
 }
 
-.program-icon {
-    font-size: 2.5rem;
+.program-card.white-card {
+    background-color: var(--bg-cream) !important;
+    /* Forcing consistency unless modified */
+}
+
+/* Age Highlight */
+.age-highlight {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--primary-blue);
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .program-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--text-navy);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .program-card p {
     color: var(--text-navy);
     opacity: 0.8;
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.6;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
-.text-link {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-weight: 600;
-    font-family: var(--font-heading);
-    font-size: 0.95rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: gap 0.3s ease;
+/* About & Programs Hero Patterns */
+.programs-hero,
+.about-hero {
+    background-color: var(--bg-cream);
+    padding: 180px 0 100px;
 }
 
-.text-link::after {
-    content: '→';
-}
-
-.text-link:hover {
-    gap: 12px;
+.age-structure {
+    background-color: var(--bg-cream);
+    padding: 100px 0;
 }
 
 /* Contact Section */
@@ -451,6 +554,102 @@ h4 {
     border-radius: var(--border-radius);
 }
 
+/* About Page Specifics */
+.about-hero {
+    background-color: var(--bg-cream);
+    padding: 180px 0 100px;
+}
+
+.who-we-are {
+    background-color: var(--bg-cream);
+    padding: 100px 0;
+}
+
+.alternating-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.grid-text h3 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.grid-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-navy);
+    opacity: 0.9;
+}
+
+.grid-image {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.our-approach {
+    padding: 120px 0;
+    background-color: var(--white);
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.approach-block {
+    text-align: center;
+}
+
+.approach-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.approach-block h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.approach-block p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.final-cta {
+    padding: 120px 0;
+    background-color: var(--bg-cream);
+}
+
+.final-cta h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.final-cta p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.sage-button {
+    color: var(--text-navy) !important;
+    font-weight: 600 !important;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -467,11 +666,32 @@ h4 {
     resize: none;
 }
 
-/* Page Header */
+/* Page Header & Common Patterns */
 .page-header {
     padding: 120px 0 60px;
     background-color: var(--bg-cream);
     text-align: center;
+}
+
+.blue-band {
+    background-color: var(--primary-blue);
+    padding: 100px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.blue-band h2 {
+    color: var(--white);
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.blue-band p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
 }
 
 /* Footer Styles */
@@ -494,18 +714,26 @@ h4 {
     .hero-container-grid,
     .about-grid,
     .contact-grid,
-    .programs-grid {
+    .programs-grid,
+    .grid-item,
+    .approach-grid {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 60px;
+        text-align: center;
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    .grid-text h3 {
         font-size: 2.8rem;
     }
 
     .fun-facts-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
