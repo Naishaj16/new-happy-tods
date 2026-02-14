@@ -16,10 +16,12 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Happy Tods</a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Happy Tods Logo">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#about">About Us</a></li>
                 <li><a href="index.html#programs">Programs</a></li>
                 <li><a href="index.html#contact" class="active">Contact</a></li>
             </ul>
@@ -35,7 +37,28 @@
     </header>
 
     <main>
-        <!-- Content for Contact Page -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contact Details</h2>
+                        <ul class="contact-details">
+                            <li>📍 123 Education Lane, Chennai, Tamil Nadu</li>
+                            <li>📞 +91 98765 43210</li>
+                            <li>✉️ hello@happytods.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Message" rows="6" required></textarea>
+                            <button type="submit" class="cta-button">Enroll Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
