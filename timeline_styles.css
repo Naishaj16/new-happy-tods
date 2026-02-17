@@ -1,0 +1,193 @@
+/* Timeline Section */
+.timeline-section {
+    padding: 80px 20px;
+    background-color: var(--bg-cream);
+    /* Theme Background */
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-heading {
+    text-align: center;
+    color: var(--primary-blue);
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.timeline-container {
+    max-width: 1000px;
+    /* Constrain width for better reading */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Central Line */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #E0E0E0;
+    /* Light grey line */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: 1;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Left and Right placement */
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+/* Circles in the middle */
+.timeline-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: -30px;
+    background-color: white;
+    border: 4px solid #EAEAEA;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-navy);
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Yellow accent circle for icon */
+.timeline-icon.accent-yellow {
+    border-color: #F8E71C;
+    /* Approximate yellow from screenshot */
+    background: #FFFAE0;
+}
+
+/* Sage accent circle */
+.timeline-icon.accent-sage {
+    border-color: var(--accent-sage);
+    background: #EFFCF5;
+}
+
+
+/* Fix circle position for right side items */
+.timeline-item.right .timeline-icon {
+    left: -30px;
+}
+
+/* Content Box */
+.timeline-content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--accent-sage);
+    /* Brand accent border */
+}
+
+/* Different border color for variety */
+.timeline-item.right .timeline-content {
+    border-left: 5px solid var(--primary-blue);
+}
+
+.timeline-year {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-content p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-navy);
+    margin: 0;
+}
+
+/* Arrows pointing to the line */
+.timeline-item.left .timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 32px;
+    width: 0;
+    z-index: 1;
+    right: -10px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline-item.right .timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 32px;
+    width: 0;
+    z-index: 1;
+    left: -10px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Responsive formatting */
+@media screen and (max-width: 768px) {
+    .timeline-container::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+
+    /* Make all arrows point left since line is on left */
+    .timeline-item.left .timeline-content::before,
+    .timeline-item.right .timeline-content::before {
+        left: -10px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .timeline-icon {
+        left: 0px !important;
+        /* Force Left */
+        right: auto;
+    }
+}

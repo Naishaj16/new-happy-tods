@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs | Happy Tods Chennai</title>
+    <meta name="description"
+        content="Explore our age-appropriate programs for toddlers, preschool, and kindergarten. Play-based learning designed for curious minds at Happy Tods Chennai.">
+    <meta property="og:title" content="Programs | Happy Tods Chennai">
+    <meta property="og:description"
+        content="Explore our age-appropriate programs for toddlers, preschool, and kindergarten.">
+    <meta property="og:image" content="ht.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,39 +23,78 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.svg" alt="Happy Tods Logo">
+                <img src="ht.jpg" alt="Happy Tods Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#programs" class="active">Programs</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html" class="active">Programmes</a></li>
+                <li><a href="contact.html">Admissions</a></li>
+                <li><a href="index.html#campus-life">Campus Life</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="index.html#contact" class="nav-cta">Enroll Now</a>
+            <a href="contact.html" class="nav-cta">Enquire Now</a>
         </div>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
-            <h1>Our Programs</h1>
-            <p>Tailored learning experiences for every stage of childhood.</p>
-        </div>
-    </header>
+    <!-- Header removed as per user request (Redundant with Hero) -->
 
     <main>
         <!-- 1. Hero / Page Intro -->
-        <section class="programs-hero">
-            <div class="container hero-container-grid">
-                <div class="hero-text">
-                    <h1>Programs designed for meaningful early learning.</h1>
-                    <p>At Happy Tods Chennai, our programs are age-appropriate, play-based, and thoughtfully paced to
-                        respect the unique journey of every child. We focus on intellectual curiosity, emotional
-                        security, and social growth.</p>
+        <!-- 1. New Hero Section (Playful Journey) -->
+        <section class="programs-hero-v2">
+            <div class="container hero-v2-grid">
+
+                <!-- Left Side: Visuals (Strictly Structured) -->
+                <div class="hero-visuals">
+                    <!-- 1. The Dotted Path (SVG Background) -->
+                    <svg class="learning-path-svg" viewBox="0 0 600 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="plane-path" d="M 50 200 Q 300 240 550 50" stroke="#8FB7A1" stroke-width="3"
+                            stroke-dasharray="12 12" stroke-linecap="round" />
+                    </svg>
+
+                    <!-- 2. Absolutely Positioned Plane Icons -->
+                    <!-- Plane 1 -->
+                    <div class="plane-icon plane-1">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40 L40 20 L0 0 L10 20 L0 40Z" fill="currentColor" />
+                        </svg>
+                    </div>
+
+                    <!-- Plane 2 -->
+                    <div class="plane-icon plane-2">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40 L40 20 L0 0 L10 20 L0 40Z" fill="currentColor" />
+                        </svg>
+                    </div>
+
+                    <!-- Plane 3 -->
+                    <div class="plane-icon plane-3">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40 L40 20 L0 0 L10 20 L0 40Z" fill="currentColor" />
+                        </svg>
+                    </div>
+
+                    <!-- Plane 4 (Accent/Goal) -->
+                    <div class="plane-icon plane-4">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40 L40 20 L0 0 L10 20 L0 40Z" fill="currentColor" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="hero-image-container">
-                    <img src="https://images.unsplash.com/photo-1587653263995-422546a72569?auto=format&fit=crop&q=80&w=1000"
-                        alt="Classroom Activity">
+
+                <!-- Right Side: Text Content -->
+                <div class="hero-v2-content">
+                    <span class="eyebrow-text">Explore Our Programs</span>
+                    <h1>Designed for Growing Minds</h1>
+                    <ul class="hero-bullet-list">
+                        <li>Encouraging curiosity through play-based discovery.</li>
+                        <li>Fostering emotional security in a warm environment.</li>
+                        <li>Building confidence for life-long learning.</li>
+                    </ul>
+                    <a href="#programs" class="cta-button">Learn More &rarr;</a>
                 </div>
+
             </div>
         </section>
 
@@ -58,29 +103,73 @@
             <div class="container">
                 <h2 class="section-title text-center">Our Programs</h2>
                 <div class="programs-grid">
-                    <div class="program-card white-card">
-                        <span class="age-highlight">1.5 - 2.5 YEARS</span>
+                    <!-- Program 1: Toddler -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <img src="assets/toddler_prog.png" alt="Toddler Program">
+                        </div>
+                        <span class="program-age">1.5 - 2.5 YEARS</span>
                         <h3>Toddler Program</h3>
                         <p>Focusing on sensory exploration, language development, and the first steps toward social
                             interaction in a gentle, warm setting.</p>
                     </div>
-                    <div class="program-card white-card">
-                        <span class="age-highlight">2.5 - 3.5 YEARS</span>
+
+                    <!-- Program 2: Preschool -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <!-- Indian kids engaged in activity -->
+                            <img src="assets/preschool_prog.png" alt="Preschool Program">
+                        </div>
+                        <span class="program-age">2.5 - 3.5 YEARS</span>
                         <h3>Preschool Program</h3>
                         <p>Encouraging active curiosity, symbolic play, and emotional resilience through a rich
                             environment of arts, nature, and community.</p>
                     </div>
-                    <div class="program-card white-card">
-                        <span class="age-highlight">3.5 - 4.5 YEARS</span>
+
+                    <!-- Program 3: Pre-Kindergarten -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <img src="assets/pre_kindergarten_prog.png" alt="Pre-Kindergarten">
+                        </div>
+                        <span class="program-age">3.5 - 4.5 YEARS</span>
                         <h3>Pre-Kindergarten</h3>
                         <p>Developing complex social bonds, early literacy, and problem-solving skills through
                             collaborative projects and inquiry-led play.</p>
                     </div>
-                    <div class="program-card white-card">
-                        <span class="age-highlight">4.5 - 5.5 YEARS</span>
+
+                    <!-- Program 4: Kindergarten -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <!-- Learning context -->
+                            <img src="assets/kindergarten_prog.png" alt="Kindergarten">
+                        </div>
+                        <span class="program-age">4.5 - 5.5 YEARS</span>
                         <h3>Kindergarten</h3>
                         <p>Preparing children for the future with confidence, literacy foundations, and a deep, lasting
                             love for learning and discovery.</p>
+                    </div>
+
+                    <!-- Program 5: Daycare -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <!-- Nurturing environment image reused or similar -->
+                            <img src="assets/daycare_prog.png" alt="Daycare Program">
+                        </div>
+                        <span class="program-age">2 - 10 YEARS</span>
+                        <h3>Daycare & After School</h3>
+                        <p>A safe, engaging home away from home where children can relax, play, and complete homework
+                            under caring supervision.</p>
+                    </div>
+
+                    <!-- Program 6: Enrichment -->
+                    <div class="program-card">
+                        <div class="program-card-image">
+                            <img src="assets/enrichment_prog.png" alt="Enrichment Activities">
+                        </div>
+                        <span class="program-age">3 - 12 YEARS</span>
+                        <h3>Enrichment Activities</h3>
+                        <p>Specialized sessions in music, dance, art, and robotics to uncover hidden talents and
+                            passions.</p>
                     </div>
                 </div>
             </div>
@@ -98,14 +187,12 @@
                                 respect and care.</p>
                         </div>
                         <div class="grid-image">
-                            <img src="https://images.unsplash.com/photo-154433334d-c40f269d06b1?auto=format&fit=crop&q=80&w=800"
-                                alt="Nurturing Progression">
+                            <img src="assets/nurturing_prog.png" alt="Nurturing Progression">
                         </div>
                     </div>
                     <div class="grid-item">
                         <div class="grid-image">
-                            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=800"
-                                alt="Balanced Learning">
+                            <img src="assets/garden_play.png" alt="Balanced Learning">
                         </div>
                         <div class="grid-text">
                             <h3>Balance & Freedom</h3>
@@ -138,7 +225,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Happy Tods Chennai. All Rights Reserved.</p>
+            <p>&copy; 2026 Happy Tods Chennai. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
